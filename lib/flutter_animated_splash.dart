@@ -217,8 +217,7 @@ class _AnimatedSplashState extends State<AnimatedSplash> {
                     }
                   }),
                 (route) => true),
-              },
-            ),
+            );
   }
 
   @override
