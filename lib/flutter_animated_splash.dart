@@ -51,7 +51,7 @@ class _AnimatedSplashState extends State<AnimatedSplash> {
 
     Timer(
         Duration(seconds: widget.durationInSeconds),
-        () => Navigator.push(
+        () => Navigator.pushAndRemoveUntil(
               context,
               PageRouteBuilder(
                   pageBuilder: (context, animation, animationTime) {
@@ -216,6 +216,8 @@ class _AnimatedSplashState extends State<AnimatedSplash> {
                       //break;
                     }
                   }),
+                (route) => true);
+              },
             ));
   }
 
