@@ -57,7 +57,7 @@ class _AnimatedSplashState extends State<AnimatedSplash> {
                   pageBuilder: (context, animation, animationTime) {
                     return widget.navigator;
                   },
-                  transitionDuration: const Duration(milliseconds: 100),
+                  transitionDuration: const Duration(milliseconds: 1000),
                   // ignore: missing_return
                   transitionsBuilder: (BuildContext context,
                       Animation<double> animation,
